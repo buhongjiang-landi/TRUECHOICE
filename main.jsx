@@ -85,85 +85,135 @@ const products = [
 
 const evidence = {
   Nike: [
-    [
-      "Company disclosure",
-      "Nike publishes information about its supply chain, labour standards and human-rights programmes.",
-      "Nike official source",
-    ],
-    [
-      "Company disclosure",
-      "Nike publishes supplier standards and supply-chain information.",
-      "Nike official source",
-    ],
-    [
-      "Open question",
-      "Company-reported information does not by itself establish conditions for every worker or lower-tier supplier.",
-      "TRUECHOICE research note",
-    ],
+    {
+      issue: "Worker safety",
+      status: "Company-reported",
+      evidenceType: "Company disclosure",
+      source: "NIKE, Inc. — Responsible Supply Chain / Health and Safety",
+      date: "FY2025",
+      whatWeKnow:
+        "NIKE reports that all strategic suppliers reached its requirement for building healthy and safe workplaces in FY2025. NIKE also reports that its Culture of Safety programme covered 106 Tier 1 factories and more than 650,000 workers.",
+      whatWeDoNotKnow:
+        "These figures are company-reported and do not independently establish working conditions for every worker or every supplier facility."
+    },
+    {
+      issue: "Labour and human rights standards",
+      status: "Company-reported",
+      evidenceType: "Company disclosure",
+      source: "NIKE, Inc. — Responsible Supply Chain",
+      date: "FY2025",
+      whatWeKnow:
+        "NIKE states that suppliers are measured against minimum standards covering labour, health and safety, and environmental impact. NIKE also states that its approach is informed by ILO principles, the UN Guiding Principles and OECD guidelines.",
+      whatWeDoNotKnow:
+        "Public company reporting does not by itself establish that every supplier consistently meets these standards at all times."
+    },
+    {
+      issue: "Worker voice and engagement",
+      status: "Company-reported",
+      evidenceType: "Company disclosure",
+      source: "NIKE, Inc. — Responsible Supply Chain / Health and Safety",
+      date: "FY2025",
+      whatWeKnow:
+        "NIKE reports that strategic suppliers work on worker engagement and worker voice, and that its safety maturity assessment includes worker feedback through a third-party administered Safety Perception Survey.",
+      whatWeDoNotKnow:
+        "The public information does not provide a complete independent assessment of worker experience across the entire supply chain."
+    }
   ],
+
   adidas: [
-    [
-      "Company disclosure",
-      "adidas publishes information about manufacturing facilities, workers and value-chain due diligence.",
-      "adidas official source",
-    ],
-    [
-      "Company disclosure",
-      "adidas reports worker feedback and social-compliance processes.",
-      "adidas official source",
-    ],
-    [
-      "Open question",
-      "Reported complaint numbers need context about access, severity and resolution.",
-      "TRUECHOICE research note",
-    ],
+    {
+      issue: "Worker health and safety",
+      status: "Company-reported",
+      evidenceType: "Company disclosure",
+      source: "adidas Annual Report 2025 — Workers in the Value Chain",
+      date: "2025",
+      whatWeKnow:
+        "adidas reports health and safety as a material worker issue and describes safety programmes, supplier assessments, worker feedback and remediation activities across its upstream value chain.",
+      whatWeDoNotKnow:
+        "adidas also reports that health and safety breaches occurred during the reporting period, so company policies and monitoring systems do not mean that all suppliers always meet the required standards."
+    },
+    {
+      issue: "Wages and working conditions",
+      status: "Company-reported",
+      evidenceType: "Company disclosure",
+      source: "adidas Annual Report 2025 — Workers in the Value Chain",
+      date: "2025",
+      whatWeKnow:
+        "adidas identifies fair wages, working hours, secure employment and social dialogue as material worker issues and reports actions intended to address these risks.",
+      whatWeDoNotKnow:
+        "The public reporting does not establish that all workers throughout every tier of the value chain receive adequate wages or experience the same working conditions."
+    },
+    {
+      issue: "Child labour and forced labour",
+      status: "Company-reported",
+      evidenceType: "Company disclosure",
+      source: "adidas Annual Report 2025 — Human Rights and Environmental Due Diligence",
+      date: "2025",
+      whatWeKnow:
+        "adidas identifies child labour and forced labour as human-rights risks and reports programmes addressing these risks in its upstream supply chain.",
+      whatWeDoNotKnow:
+        "The existence of policies, risk assessments and programmes does not independently prove that child or forced labour is absent from every part of the supply chain."
+    },
+    {
+      issue: "Freedom of association",
+      status: "Company-reported",
+      evidenceType: "Company disclosure",
+      source: "adidas Annual Report 2025 — Workers in the Value Chain",
+      date: "2025",
+      whatWeKnow:
+        "adidas reports processes for worker engagement, worker representatives, trade unions and grievance mechanisms in its upstream supply chain.",
+      whatWeDoNotKnow:
+        "Public reporting does not independently establish the effectiveness of freedom-of-association protections at every supplier facility."
+    }
   ],
+
   ASICS: [
-    [
-      "Company disclosure",
-      "ASICS publishes supplier standards covering labour and human-rights expectations.",
-      "ASICS official source",
-    ],
-    [
-      "Company disclosure",
-      "ASICS publishes sustainability information covering supply-chain and environmental topics.",
-      "ASICS official source",
-    ],
-    [
-      "Open question",
-      "Supplier standards describe requirements but do not prove every supplier consistently meets them.",
-      "TRUECHOICE research note",
-    ],
-  ],
+    {
+      issue: "Human rights in the supply chain",
+      status: "Company-reported",
+      evidenceType: "Company disclosure",
+      source: "ASICS — Human Rights and Transparency in the Supply Chain",
+      date: "2025",
+      whatWeKnow:
+        "ASICS states that it seeks to respect human rights throughout its supply chain and uses a supply-chain management programme to maintain and improve standards.",
+      whatWeDoNotKnow:
+        "Company policies and management programmes do not independently establish conditions for every worker or supplier."
+    },
+    {
+      issue: "Supplier standards and compliance",
+      status: "Company-reported",
+      evidenceType: "Company disclosure",
+      source: "ASICS Sustainability Report 2025",
+      date: "2025",
+      whatWeKnow:
+        "ASICS reported 100% supplier compliance with its standards in its 2025 Sustainability Report and identifies Tier 1 and key Tier 2 supplier standards as part of its supply-chain approach.",
+      whatWeDoNotKnow:
+        "This is an ASICS-reported compliance figure. The public disclosure does not by itself provide independent verification of every supplier's working conditions."
+    },
+    {
+      issue: "Forced labour",
+      status: "Company-reported",
+      evidenceType: "Company disclosure",
+      source: "ASICS — Human Rights and Transparency in the Supply Chain",
+      date: "2025",
+      whatWeKnow:
+        "ASICS states that it strongly condemns forced or involuntary labour and describes supply-chain management and due-diligence processes intended to address this risk.",
+      whatWeDoNotKnow:
+        "A policy against forced labour does not independently establish that forced labour is absent from every supplier or lower-tier source."
+    },
+    {
+      issue: "Supply-chain transparency",
+      status: "Company-reported",
+      evidenceType: "Company disclosure",
+      source: "ASICS — Human Rights and Transparency in the Supply Chain",
+      date: "2025",
+      whatWeKnow:
+        "ASICS states that it is working to strengthen traceability and risk analytics and to expand human-rights risk management into Tier 2 suppliers.",
+      whatWeDoNotKnow:
+        "The public information does not provide complete visibility into every tier, facility and material source."
+    }
+  ]
 };
-
-function App() {
-  const [page, setPage] = useState("home");
-  const [selectedProduct, setSelectedProduct] = useState(null);
-  const [selectedBrand, setSelectedBrand] = useState(null);
-  const [searchText, setSearchText] = useState("");
-  const [category, setCategory] = useState("All");
-  const [cart, setCart] = useState([]);
-
-  const go = (p) => {
-    setPage(p);
-    window.scrollTo(0, 0);
-  };
-
-  const openProduct = (product) => {
-    setSelectedProduct(product);
-    go("product");
-  };
-
-  const openBrand = (brand) => {
-    setSelectedBrand(brand);
-    go("brand");
-  };
-
-  const addToCart = (product) => {
-    setCart([...cart, product]);
-    alert("Added to demo cart. No real order will be placed.");
-  };
 
   const filteredProducts = products.filter((p) => {
     const matchesCategory =
