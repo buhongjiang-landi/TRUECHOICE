@@ -570,27 +570,39 @@ const evidence = {
               <div>
                 <h2>Evidence Explorer</h2>
 
-                {(evidence[selectedBrand] || []).map(
-                  (item, index) => (
-                    <div className="evidence-card" key={index}>
-                      <div
-                        className={
-                          item[0] === "Open question"
-                            ? "evidence-label unknown"
-                            : "evidence-label"
-                        }
-                      >
-                        {item[0]}
-                      </div>
+              {(evidence[selectedBrand] || []).map((item, index) => (
+  <div className="evidence-card" key={index}>
+    <div
+      className={
+        item.status === "Unknown"
+          ? "evidence-label unknown"
+          : "evidence-label"
+      }
+    >
+      {item.status}
+    </div>
 
-                      <h3>{item[1]}</h3>
+    <h3>{item.issue}</h3>
 
-                      <div className="source">
-                        Source: {item[2]}
-                      </div>
-                    </div>
-                  )
-                )}
+    <p className="muted">
+      <strong>Evidence type:</strong> {item.evidenceType}
+    </p>
+
+    <p className="muted">
+      <strong>Date:</strong> {item.date}
+    </p>
+
+    <p>{item.whatWeKnow}</p>
+
+    <p className="muted">
+      <strong>What we don't know:</strong> {item.whatWeDoNotKnow}
+    </p>
+
+    <div className="source">
+      Source: {item.source}
+    </div>
+  </div>
+))}
               </div>
 
               <div>
