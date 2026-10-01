@@ -339,13 +339,23 @@ function App() {
                 </div>
 
                 <div className="priority-card">
-                  <div className="priority-icon">🔗</div>
-                  <h3>Supply Chain</h3>
-                  <p>
-                    Supplier visibility, sourcing standards,
-                    traceability and supply-chain information.
-                  </p>
-                </div>
+  <div className="priority-icon">🔗</div>
+  <h3>Supply Chain</h3>
+  <p>
+    Supplier visibility, sourcing standards,
+    traceability and supply-chain information.
+  </p>
+
+  <button
+    onClick={() => {
+      setCategory("All");
+      setSearchText("");
+      go("evidence");
+    }}
+  >
+    Explore supply-chain evidence →
+  </button>
+</div>
 
                 <div className="priority-card">
                   <div className="priority-icon">🌱</div>
