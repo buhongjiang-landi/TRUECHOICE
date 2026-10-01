@@ -348,10 +348,9 @@ function App() {
 
   <button
     onClick={() => {
-      setCategory("All");
-      setSearchText("");
-      go("evidence");
-    }}
+  setSelectedBrand("Nike");
+  go("brand");
+}}
   >
     Explore supply-chain evidence →
   </button>
